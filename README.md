@@ -1,11 +1,4 @@
 # smart-sorting-transfer-learning-for-identifying-rotten-fruit-and-vegetable-
-Workflow
-The logical approach of this project follows the displayed flow:
-
-
-
-We begin with training a Deep Learning model on a set of labeled pictures of fresh and rotten apples, oranges and bananas. The used model is a VGGNet with 16 convolutional layers, 3x3 convolutions and 138M parameters. For reducing the volume size we use max pooling. After the model is trained and testet we convert it into a core ML model which is an optimized format for running it on mobile iOS devices. The converted model can be imported into XCode and from ther conveniently instantiated within the swift code for the iOS App.
-
 Python scripts
 train_hero.py: This Python script contains the code for training a model on a given dataset. Parameters to be specified in the argument parser are the dataset, model, label binarizer and the name of the training Loss and Accuracy plot.
 test_hero.py: Python script to evaluate the trained model on a test set of images or a single image. Parameters to be specified in the argument parser are the model, label binarizer, location of test image or path to test dataset.
